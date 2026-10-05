@@ -22,8 +22,7 @@ export function Projects() {
         <div className="text-center space-y-4 mb-12">
           <h2 className="text-3xl md:text-4xl">Featured Projects</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            A selection of projects that demonstrate my expertise in full-stack 
-            development and modern DevOps practices.
+            A curated showcase of data engineering pipelines, spatial intelligence architectures, and production-ready AI systems.
           </p>
         </div>
         
