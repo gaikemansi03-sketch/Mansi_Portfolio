@@ -43,19 +43,18 @@ export function Hero() {
               <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl tracking-tight">
                 <span className="block">Hello, I'm</span>
                 <span className="block bg-gradient-to-r from-primary via-primary to-primary/70 bg-clip-text text-transparent">
-                  John Developer
+                  Mansi Gaike
                 </span>
               </h1>
               
               <div className="space-y-4">
                 <p className="text-xl sm:text-2xl text-muted-foreground max-w-lg">
-                  Senior Software Engineer crafting digital experiences with
-                  <span className="text-primary"> 5+ years</span> of expertise
+                  B.Tech in Artificial Intelligence and Data Science, with a
+                  <span className="text-primary"> minor in Business Analytics</span>
                 </p>
                 
                 <p className="text-lg text-muted-foreground/80 max-w-md">
-                  Specializing in full-stack development, DevOps practices, and scalable solutions 
-                  that drive business growth.
+                  Specializing in end-to-end data systems—from analytics and data engineering to scalable AI integration for real-world impact.
                 </p>
               </div>
             </div>
@@ -85,22 +84,36 @@ export function Hero() {
                 variant="ghost" 
                 size="icon" 
                 className="h-12 w-12 rounded-full bg-background/50 backdrop-blur-sm border border-primary/10 hover:bg-primary/10 hover:border-primary/30 transition-all duration-300"
+                asChild
               >
-                <Github className="h-5 w-5" />
+                <a href="https://github.com/gaikemansi03-sketch" target="_blank" rel="noreferrer" aria-label="GitHub profile">
+                  <Github className="h-5 w-5" />
+                </a>
               </Button>
               <Button 
                 variant="ghost" 
                 size="icon" 
                 className="h-12 w-12 rounded-full bg-background/50 backdrop-blur-sm border border-primary/10 hover:bg-primary/10 hover:border-primary/30 transition-all duration-300"
+                asChild
               >
-                <Linkedin className="h-5 w-5" />
+                <a href="https://www.linkedin.com/in/mansi-gaike-821260316" target="_blank" rel="noreferrer" aria-label="LinkedIn profile">
+                  <Linkedin className="h-5 w-5" />
+                </a>
               </Button>
               <Button 
                 variant="ghost" 
                 size="icon" 
                 className="h-12 w-12 rounded-full bg-background/50 backdrop-blur-sm border border-primary/10 hover:bg-primary/10 hover:border-primary/30 transition-all duration-300"
+                asChild
               >
-                <Mail className="h-5 w-5" />
+                <a
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=gaikemansi03%40gmail.com"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Email Mansi Gaike"
+                >
+                  <Mail className="h-5 w-5" />
+                </a>
               </Button>
             </div>
 
@@ -132,8 +145,8 @@ export function Hero() {
               <div className="relative z-10 group">
                 <div className="relative w-80 h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden bg-gradient-to-br from-primary/10 to-secondary/10 backdrop-blur-sm border-4 border-background/50 shadow-2xl">
                   <ImageWithFallback
-                    src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face"
-                    alt="John Developer - Senior Software Engineer"
+                    src="/profile-photo.jpeg"
+                    alt="Portfolio profile photo"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                   

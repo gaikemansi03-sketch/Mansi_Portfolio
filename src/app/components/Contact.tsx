@@ -24,7 +24,14 @@ export function Contact() {
                   <Mail className="h-5 w-5 text-primary" />
                   <div>
                     <h4>Email</h4>
-                    <p className="text-muted-foreground">john.developer@email.com</p>
+                    <a
+                      className="text-muted-foreground hover:text-primary transition-colors"
+                      href="https://mail.google.com/mail/?view=cm&fs=1&to=gaikemansi03%40gmail.com"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      gaikemansi03@gmail.com
+                    </a>
                   </div>
                 </div>
               </CardContent>
