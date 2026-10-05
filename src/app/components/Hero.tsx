@@ -73,8 +73,9 @@ export function Hero() {
                 variant="outline" 
                 size="lg" 
                 className="px-8 py-6 bg-background/50 backdrop-blur-sm border-primary/20 hover:bg-primary/10"
+                asChild
               >
-                View My Work
+                <a href="#projects">View My Work</a>
               </Button>
             </div>
 
