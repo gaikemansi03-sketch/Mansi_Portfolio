@@ -3,7 +3,7 @@ import { Button } from "./components/ui/button";
 import { Menu, X } from "lucide-react";
 import { Hero } from "./components/Hero";
 import { Skills } from "./components/Skills";
-import { Experience } from "./components/Experience";
+import { About } from "./components/About";
 import { Projects } from "./components/Projects";
 import { Contact } from "./components/Contact";
 import { ThemeProvider } from "./components/theme-provider";
@@ -15,7 +15,7 @@ export default function App() {
   const navItems = [
     { label: "Home", href: "#home" },
     { label: "Skills", href: "#skills" },
-    { label: "Experience", href: "#experience" },
+    { label: "About", href: "#about" },
     { label: "Projects", href: "#projects" },
     { label: "Contact", href: "#contact" }
   ];
@@ -92,8 +92,8 @@ export default function App() {
           <div id="skills">
             <Skills />
           </div>
-          <div id="experience">
-            <Experience />
+          <div id="about">
+            <About />
           </div>
           <div id="projects">
             <Projects />
@@ -106,12 +106,12 @@ export default function App() {
         {/* Footer */}
         <footer className="bg-secondary/10 py-12 px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h3 className="mb-4">John Developer</h3>
+            <h3 className="mb-4">Mansi Gaike</h3>
             <p className="text-muted-foreground mb-6">
-              Senior Software Engineer | Full-Stack Developer | DevOps Enthusiast
+              AI &amp; Data Engineer | Analytics &amp; Intelligent Systems
             </p>
             <p className="text-sm text-muted-foreground">
-              © 2025 John Developer. All rights reserved.
+              © 2026 Mansi Gaike. All rights reserved.
             </p>
           </div>
         </footer>

@@ -7,6 +7,14 @@ import { ImageWithFallback } from "./figma/ImageWithFallback";
 export function Projects() {
   const projects = [
     {
+      title: "Aurangabad Quick-Commerce & Dark Store Ecosystem",
+      description: "A collaborative quick-commerce platform connecting customer orders with a dark-store operations dashboard. Features geospatial store assignment, live order and courier tracking, demand forecasting, and inventory analytics.",
+      image: "https://raw.githubusercontent.com/NeelBelsare/my-dark-store-app/main/docs/screenshots/02_command_center_telemetry.png",
+      technologies: ["Python", "Streamlit", "FastAPI", "Supabase", "PostgreSQL/PostGIS", "React Native", "Flutter"],
+      github: "https://github.com/NeelBelsare/my-dark-store-app",
+      demo: "https://blinkit-aurangabad.netlify.app/"
+    },
+    {
       title: "E-Commerce Platform",
       description: "Full-stack e-commerce solution built with Next.js and Node.js. Features include user authentication, payment processing, and admin dashboard.",
       image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop",
@@ -66,14 +74,22 @@ export function Projects() {
                   ))}
                 </div>
                 <div className="flex gap-2 pt-2">
-                  <Button variant="outline" size="sm" className="gap-2">
-                    <Github className="h-4 w-4" />
-                    Code
-                  </Button>
-                  <Button size="sm" className="gap-2">
-                    <ExternalLink className="h-4 w-4" />
-                    Demo
-                  </Button>
+                  {project.github !== "#" && (
+                    <Button variant="outline" size="sm" className="gap-2" asChild>
+                      <a href={project.github} target="_blank" rel="noreferrer">
+                        <Github className="h-4 w-4" />
+                        Code
+                      </a>
+                    </Button>
+                  )}
+                  {project.demo !== "#" && (
+                    <Button size="sm" className="gap-2" asChild>
+                      <a href={project.demo} target="_blank" rel="noreferrer">
+                        <ExternalLink className="h-4 w-4" />
+                        Demo
+                      </a>
+                    </Button>
+                  )}
                 </div>
               </CardContent>
             </Card>

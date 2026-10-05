@@ -1,38 +1,38 @@
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 import { Badge } from "./ui/badge";
-import { Code, Settings, Globe, Database, TestTube, Cloud } from "lucide-react";
+import { Code, Settings, Globe, Database, BrainCircuit, Cloud } from "lucide-react";
 
 export function Skills() {
   const skillCategories = [
     {
       icon: Code,
-      title: "Programming Languages",
-      skills: ["JavaScript", "TypeScript", "SQL", "PHP", "HCL"]
+      title: "Languages",
+      skills: ["Python", "SQL", "JavaScript", "C", "C++", "PowerShell"]
     },
     {
       icon: Settings,
-      title: "DevOps & Tools",
-      skills: ["Docker", "Git", "VIM", "NeoVim", "Kubernetes", "Agile", "CI/CD with Jenkins", "Terraform"]
+      title: "DevOps, Cloud & Tools",
+      skills: ["Docker", "Kubernetes", "Git", "GitHub Actions", "Linux", "Render", "Vercel"]
     },
     {
       icon: Globe,
-      title: "JavaScript Libraries & Frameworks",
-      skills: ["Node.js", "React.js", "Bun.js", "Deno", "Vanilla JS", "Next.js"]
+      title: "Frameworks & UI",
+      skills: ["React", "Vite", "Flutter", "FastAPI", "Flask", "Node.js", "Streamlit"]
     },
     {
       icon: Database,
-      title: "Web Frameworks",
-      skills: ["Express.js", "Fastify"]
+      title: "Databases & Spatial Systems",
+      skills: ["PostgreSQL", "PostGIS", "MySQL", "Redis", "Supabase", "Firebase"]
     },
     {
       icon: Cloud,
-      title: "Backend as a Service",
-      skills: ["Firebase", "Appwrite"]
+      title: "Data Science & Analytics",
+      skills: ["Pandas", "NumPy", "Matplotlib", "Scikit-Learn", "Power BI"]
     },
     {
-      icon: TestTube,
-      title: "Testing",
-      skills: ["Jest"]
+      icon: BrainCircuit,
+      title: "AI & LLMs",
+      skills: ["OpenAI", "Ollama", "Qwen", "Grok"]
     }
   ];
 
@@ -42,8 +42,7 @@ export function Skills() {
         <div className="text-center space-y-4 mb-12">
           <h2 className="text-3xl md:text-4xl">Technical Skills</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Comprehensive expertise across modern development stack with focus on 
-            scalable web applications and DevOps practices.
+            Comprehensive technical stack spanning data analytics, machine learning workflows, and robust cloud-ready applications.
           </p>
         </div>
         
