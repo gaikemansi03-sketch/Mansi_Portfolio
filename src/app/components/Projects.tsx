@@ -14,14 +14,6 @@ export function Projects() {
       github: "https://github.com/NeelBelsare/my-dark-store-app",
       demo: "https://blinkit-aurangabad.netlify.app/"
     },
-    {
-      title: "Real-time Analytics Dashboard",
-      description: "Interactive dashboard for real-time data visualization using React and Firebase. Handles thousands of concurrent users with live updates.",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
-      technologies: ["React", "Firebase", "Chart.js", "WebSocket", "TypeScript"],
-      github: "#",
-      demo: "#"
-    }
   ];
 
   return (
