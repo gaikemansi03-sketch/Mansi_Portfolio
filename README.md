@@ -1,11 +1,16 @@
+# Mansi Portfolio
 
-  # Senior Software Engineer Portfolio Website (Community)
+## Run locally
 
-  This is a code bundle for Senior Software Engineer Portfolio Website (Community). The original project is available at https://www.figma.com/design/NFSwfVN2SRHfjRnijfbYSG/Senior-Software-Engineer-Portfolio-Website--Community-.
+Install dependencies and start the Vite development server:
 
-  ## Running the code
+```sh
+npm install
+npm run dev
+```
 
-  Run `npm i` to install the dependencies.
+Create a production build with:
 
-  Run `npm run dev` to start the development server.
-  
+```sh
+npm run build
+```
