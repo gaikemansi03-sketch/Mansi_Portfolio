@@ -23,14 +23,6 @@ export function Projects() {
       demo: "#"
     },
     {
-      title: "DevOps Automation Suite",
-      description: "Comprehensive CI/CD pipeline automation using Jenkins, Docker, and Kubernetes. Reduced deployment time by 70% and improved system reliability.",
-      image: "https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?w=600&h=400&fit=crop",
-      technologies: ["Jenkins", "Docker", "Kubernetes", "Terraform", "AWS"],
-      github: "#",
-      demo: "#"
-    },
-    {
       title: "Real-time Analytics Dashboard",
       description: "Interactive dashboard for real-time data visualization using React and Firebase. Handles thousands of concurrent users with live updates.",
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",

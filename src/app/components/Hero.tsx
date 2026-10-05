@@ -117,21 +117,6 @@ export function Hero() {
               </Button>
             </div>
 
-            {/* Quick Stats */}
-            <div className="grid grid-cols-3 gap-8 pt-8">
-              <div className="text-center lg:text-left">
-                <div className="text-2xl md:text-3xl mb-1">50+</div>
-                <div className="text-sm text-muted-foreground">Projects</div>
-              </div>
-              <div className="text-center lg:text-left">
-                <div className="text-2xl md:text-3xl mb-1">5+</div>
-                <div className="text-sm text-muted-foreground">Years Exp</div>
-              </div>
-              <div className="text-center lg:text-left">
-                <div className="text-2xl md:text-3xl mb-1">100%</div>
-                <div className="text-sm text-muted-foreground">Client Satisfaction</div>
-              </div>
-            </div>
           </div>
 
           {/* Right Side - Image */}

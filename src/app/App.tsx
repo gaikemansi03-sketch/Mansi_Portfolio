@@ -28,7 +28,7 @@ export default function App() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between items-center h-16">
               <div className="shrink-0">
-                <h3 className="tracking-tight">John Developer</h3>
+                <h3 className="tracking-tight">Mansi Gaike</h3>
               </div>
               
               {/* Desktop Navigation */}
