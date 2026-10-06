@@ -4,7 +4,7 @@ import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
 
-const email = "gaikemansi03@gmail.com";
+const email = "mansigaike2006@gmail.com";
 
 export function Contact() {
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
