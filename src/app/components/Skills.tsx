@@ -1,72 +1,93 @@
-import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
-import { Badge } from "./ui/badge";
-import { Code, Settings, Globe, Database, BrainCircuit, Cloud } from "lucide-react";
+import { BarChart3, BrainCircuit, Cloud, Code2, Database, Globe2 } from "lucide-react";
 
 export function Skills() {
   const skillCategories = [
     {
-      icon: Code,
+      icon: Code2,
       title: "Languages",
-      skills: ["Python", "SQL", "JavaScript", "C", "C++", "PowerShell"]
+      description: "Building blocks for reliable, maintainable systems.",
+      skills: ["Python", "SQL", "JavaScript", "C", "C++", "PowerShell"],
     },
     {
-      icon: Settings,
+      icon: Cloud,
       title: "DevOps, Cloud & Tools",
-      skills: ["Docker", "Kubernetes", "Git", "GitHub Actions", "Linux", "Render", "Vercel"]
+      description: "Shipping applications with resilient infrastructure.",
+      skills: ["Docker", "Kubernetes", "Git", "GitHub Actions", "Linux", "Render", "Vercel"],
     },
     {
-      icon: Globe,
+      icon: Globe2,
       title: "Frameworks & UI",
-      skills: ["React", "Vite", "Flutter", "FastAPI", "Flask", "Node.js", "Streamlit"]
+      description: "Turning ideas into useful, polished experiences.",
+      skills: ["React", "Vite", "Flutter", "FastAPI", "Flask", "Node.js", "Streamlit"],
     },
     {
       icon: Database,
       title: "Databases & Spatial Systems",
-      skills: ["PostgreSQL", "PostGIS", "MySQL", "Redis", "Supabase", "Firebase"]
+      description: "Organizing transactional and geospatial data.",
+      skills: ["PostgreSQL", "PostGIS", "MySQL", "Redis", "Supabase", "Firebase"],
     },
     {
-      icon: Cloud,
+      icon: BarChart3,
       title: "Data Science & Analytics",
-      skills: ["Pandas", "NumPy", "Matplotlib", "Scikit-Learn", "Power BI"]
+      description: "Finding signal in data and communicating what matters.",
+      skills: ["Pandas", "NumPy", "Matplotlib", "Scikit-Learn", "Power BI"],
     },
     {
       icon: BrainCircuit,
       title: "AI & LLMs",
-      skills: ["OpenAI", "Ollama", "Qwen", "Grok"]
-    }
+      description: "Exploring practical applications for intelligent systems.",
+      skills: ["OpenAI", "Ollama", "Qwen", "Grok"],
+    },
   ];
 
   return (
-    <section className="py-20 px-4 bg-secondary/5">
-      <div className="max-w-6xl mx-auto">
-        <div className="text-center space-y-4 mb-12">
-          <h2 className="text-3xl md:text-4xl">Technical Skills</h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
-            Comprehensive technical stack spanning data analytics, machine learning workflows, and robust cloud-ready applications.
+    <section className="px-4 py-24 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-6xl">
+        <div className="mb-12 space-y-4 text-center">
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-primary">
+            My toolkit
+          </p>
+          <h2 className="text-3xl font-semibold tracking-tight md:text-4xl">Technical Skills</h2>
+          <p className="mx-auto max-w-2xl leading-relaxed text-muted-foreground">
+            A versatile toolkit spanning software development, data analytics, machine learning,
+            and cloud-ready applications.
           </p>
         </div>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {skillCategories.map((category, index) => {
-            const IconComponent = category.icon;
+
+        <div className="mx-auto grid max-w-6xl grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
+          {skillCategories.map((category) => {
+            const Icon = category.icon;
+
             return (
-              <Card key={index} className="h-full">
-                <CardHeader>
-                  <CardTitle className="flex items-center gap-3">
-                    <IconComponent className="h-5 w-5 text-primary" />
-                    {category.title}
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
+              <article
+                key={category.title}
+                className="group relative overflow-hidden rounded-2xl border border-border/50 bg-card/50 p-6 backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-primary/40 hover:shadow-xl hover:shadow-primary/5"
+              >
+                <div className="absolute -right-12 -top-12 h-32 w-32 rounded-full bg-primary/5 blur-3xl transition-colors group-hover:bg-primary/10" />
+                <div className="relative">
+                  <div className="mb-5 flex items-start gap-4">
+                    <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-primary/15 bg-primary/10 text-primary">
+                      <Icon className="h-5 w-5" aria-hidden="true" />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold tracking-tight">{category.title}</h3>
+                      <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
+                        {category.description}
+                      </p>
+                    </div>
+                  </div>
                   <div className="flex flex-wrap gap-2">
-                    {category.skills.map((skill, skillIndex) => (
-                      <Badge key={skillIndex} variant="secondary">
+                    {category.skills.map((skill) => (
+                      <span
+                        key={skill}
+                        className="rounded-full border border-border/50 bg-muted/50 px-3 py-1 text-xs font-medium text-foreground/85 transition-all duration-200 group-hover:border-primary/20 hover:!bg-primary hover:!text-primary-foreground"
+                      >
                         {skill}
-                      </Badge>
+                      </span>
                     ))}
                   </div>
-                </CardContent>
-              </Card>
+                </div>
+              </article>
             );
           })}
         </div>
