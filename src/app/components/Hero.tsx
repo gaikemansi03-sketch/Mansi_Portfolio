@@ -75,7 +75,7 @@ export function Hero() {
                   icon: Linkedin,
                 },
                 {
-                  href: "mailto:mansigaike2006@gmail.com",
+                  href: "https://mail.google.com/mail/?view=cm&fs=1&to=mansigaike2006@gmail.com",
                   label: "Email Mansi Gaike",
                   icon: Mail,
                 },
